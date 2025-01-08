@@ -26,15 +26,17 @@
         </div>
 
         <!-- section for rooms home page -->
-        <?php
-        query_posts('category_name=rooms&posts_per_page=4');
-        if (have_posts()) {
-            while (have_posts()) {
-                the_post(); ?>
 
-                <div id="room-section">
-                    <h2>Our Rooms & Suites</h2>
-                    <div class="grid">
+        <div id="room-section">
+            <h2>Our Rooms & Suites</h2>
+            <div class="grid">
+                <?php
+                query_posts('category_name=rooms&posts_per_page=4');
+                if (have_posts()) {
+                    while (have_posts()) {
+                        the_post(); ?>
+
+
                         <div class="homeRoom">
                             <?php
                             //finns bild?
@@ -51,12 +53,13 @@
                         </div>
 
 
-                    </div>
 
-                    <?php
-            }
-        }
-        ?>
+
+                        <?php
+                    }
+                }
+                ?>
+            </div>
 
             <div class="center">
                 <!-- RÄTT LÄNK HÄR -->
