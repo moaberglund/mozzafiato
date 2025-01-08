@@ -28,7 +28,7 @@
                             <?php } ?>
                         </div>
                         <div class="rs-text">
-                            <p><?php the_excerpt(); ?></p>
+                            <p><?php the_excerpt(); ?></p><br>
                             <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
                         </div>
 

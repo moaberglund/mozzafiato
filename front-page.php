@@ -42,8 +42,8 @@
                                 ?>
                                 <!-- dynamisk bild -->
                                 <?php the_post_thumbnail('img-l') ?>
-                                <h3><?php the_title(); ?></h3>
-                                <a href="<?php the_permalink(); ?>" class="btn"></a>
+                                <h3><?php the_title(); ?></h3><br>
+                                <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
 
                             <?php } ?>
 
