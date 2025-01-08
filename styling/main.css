@@ -57,7 +57,7 @@ form button:hover {
   background: #91a4facc;
 }
 
-.parallax {
+.parallax img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -393,7 +393,7 @@ h2 {
 }
 
 #diningtable {
-  background-image: url("fine-dining.d3242817.jpg");
+  background-image: url("https://images.pexels.com/photos/20927257/pexels-photo-20927257/free-photo-of-hus-landmarke-byggnader-trad.jpeg");
 }
 
 #speedboat {
