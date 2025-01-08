@@ -107,18 +107,19 @@
 
 
         </div>
+        
 
         <!-- services (max:6) -->
 
-        <?php
-        query_posts('category_name=services&posts_per_page=6');
-        if (have_posts()) {
-            while (have_posts()) {
-                the_post(); ?>
+        <div id="services">
+            <h2>Our Services</h2>
+            <div class="flex">
+                <?php
+                query_posts('category_name=services&posts_per_page=6');
+                if (have_posts()) {
+                    while (have_posts()) {
+                        the_post(); ?>
 
-                <div id="services">
-                    <h2>Our Services</h2>
-                    <div class="flex">
                         <div class="service-bubble">
 
                             <?php
@@ -126,22 +127,23 @@
                             if (has_post_thumbnail()) {
                                 ?>
                                 <!-- dynamisk bild -->
-                                <?php the_post_thumbnail('img-square') ?>
+                                <?php the_post_thumbnail('img-icon') ?>
                                 <h3><?php the_title(); ?></h3>
                                 <p><?php the_content(); ?></p>
 
                             <?php } ?>
 
                         </div>
-                    </div>
 
 
-                </div>
+                        <?php
+                    }
+                }
+                ?>
+            </div>
 
-                <?php
-            }
-        }
-        ?>
+
+        </div>
 
     </div>
 

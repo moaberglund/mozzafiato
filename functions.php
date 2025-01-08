@@ -24,6 +24,8 @@ add_image_size('img-parallax', 1500, 1500);
 add_image_size('img-m', 400);
 add_image_size('img-s', 200);
 add_image_size('img-square', 400, 400);
+add_image_size('img-icon', 40, 40);
+
 
 
 /* Aktivera widget area */
