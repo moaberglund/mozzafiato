@@ -21,10 +21,10 @@
                             //finns bild?
                             if (has_post_thumbnail()) {
                                 ?>
-                                <img class="trip-img">
+                                <picture>
                                 <!-- dynamisk bild -->
                                 <?php the_post_thumbnail('img-large') ?>
-                                </img>
+                                </picture>
                             <?php } ?>
                         </div>
                         <div class="rs-text">
