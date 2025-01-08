@@ -1,0 +1,72 @@
+//färger
+$lightest: #f6f5f3;
+$gold: #d8ae5e;
+
+$light_grey: #e9e9e9;
+$grey: #d6d9d9;
+
+$light_green: #b7bab3;
+$dark_green: #78786d;
+
+footer {
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+  }
+  .top-footer {
+    background-color: $light_green;
+    padding: 3em;
+    line-height: 1.5em;
+    h2 {
+      color: #42423d;
+    }
+    a {
+      color: $lightest;
+      text-decoration: none;
+      &:hover {
+        color: white;
+      }
+    }
+    img {
+      max-width: 280px;
+    }
+    .small {
+      font-size: 13px;
+    }
+  }
+  .bottom-footer {
+    background-color: $dark_green;
+    padding: 1em;
+    text-align: center;
+    color: $grey;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    .grid-3 {
+      grid-template-columns: 1fr;
+      gap: 2em;
+      text-align: center;
+    }
+
+    .top-footer {
+      padding: 2em 0.2em;
+
+      img {
+        max-width: 200px; // Anpassa bildstorlek
+        margin: 0 auto; // Centrera bilden
+      }
+
+      .small {
+        font-size: 10px; // Minska textstorleken på små skärmar
+      }
+    }
+
+    .bottom-footer {
+      padding: 0.5em; // Minska padding i den nedre delen av footern
+      font-size: 14px; // Justera textstorlek
+    }
+  }
+}

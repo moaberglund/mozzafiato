@@ -1,0 +1,63 @@
+$lightest: #f6f5f3;
+$gold: #d8ae5e;
+
+$light_grey: #e9e9e9;
+$grey: #d6d9d9;
+
+$light_green: #b7bab3;
+$dark_green: #78786d;
+
+.events-overview-bubble {
+  line-height: 1.4em;
+  background-color: $light_grey;
+  padding: 1em;
+  display: flex; /* Aktiverar flex-rad-layouten */
+  flex-direction: row; /* (Redundant i detta fall, men för tydlighetens skull) */
+  align-items: flex-start; /* Justerar texten till toppen av bubblan */
+  gap: 1em; /* Lägger till mellanrum mellan bild och text */
+  margin-bottom: 2em; /* Skapar utrymme mellan bubblorna */
+
+  img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  h3 {
+    font-weight: 600;
+    padding-top: 0.5em;
+  }
+
+  p {
+    padding-top: 1em;
+    font-size: 1.1em;
+  }
+}
+
+.top-div-event {
+  padding: 1em;
+  img {
+    width: 450px;
+    max-width: 95%;
+    height: 450px;
+    max-height: 950%;
+    object-fit: cover;
+  }
+  p {
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .events-overview-bubble {
+    flex-direction: column; /* Byter till en kolumnlayout på små skärmar */
+    text-align: center; /* Justerar texten */
+  }
+
+  .events-overview-bubble img {
+    width: 100%; /* Bilden fyller hela bredden */
+    height: auto; /* Behåller proportionerna */
+  }
+}

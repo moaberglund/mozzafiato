@@ -1,0 +1,73 @@
+.room {
+  padding-bottom: 8em;
+  h1 {
+    font-size: 1.6em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 400;
+    padding: 0.8em;
+  }
+}
+
+.room-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+
+  .room-left {
+    width: 90%;
+
+    h2 {
+      font-weight: 500;
+      font-size: 1.3em;
+    }
+
+    p {
+      margin: 1em 0;
+    }
+
+    form {
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      input {
+        margin: 1em 0;
+        padding: 0.8em;
+        border: 1px solid rgb(145, 164, 250);
+        border-radius: 5px;
+      }
+    }
+
+    button {
+      margin: 1em 0;
+      padding: 0.8em;
+      background: rgb(145, 164, 250);
+      border: none;
+      border-radius: 5px;
+      &:hover {
+        background: rgb(145, 164, 250, 0.8);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .room-right {
+    width: 90%;
+    img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+    p {
+      margin-top: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .room-flex {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+}

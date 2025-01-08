@@ -1,0 +1,134 @@
+$lightest: #f6f5f3;
+
+$light_grey: #e9e9e9;
+$grey: #d6d9d9;
+
+$light_green: #b7bab3;
+$dark_green: #78786d;
+
+#home {
+  h2 {
+    margin-top: 2.5em;
+  }
+}
+
+#form-img img {
+  width: 95%;
+  max-height: 300px;
+  object-fit: cover;
+  margin: auto;
+}
+
+#room-section {
+  background-color: $lightest;
+  padding: 0 2em;
+
+  .homeRoom {
+    margin-bottom: 2em;
+  }
+
+  h2 {
+    padding: 1em 0;
+  }
+  h3 {
+    font-weight: 400;
+  }
+  img {
+    width: 85%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  button {
+    margin: 1em 0;
+    padding: 0.8em;
+    background: rgb(145, 164, 250);
+    border: none;
+    border-radius: 5px;
+    &:hover {
+      background: rgb(145, 164, 250, 0.8);
+      cursor: pointer;
+    }
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+
+    button {
+      padding: 1.1em;
+    }
+  }
+}
+
+#parallaxHome {
+  background-image: url("../media/view01.jpg");
+}
+
+.news-bubble {
+  margin: 1em 1em 1em 0;
+  width: 300px;
+  height: 300px;
+  overflow: hidden; /* Förhindrar att den zoomade bilden sticker ut */
+  position: relative; /* Behövs för att kontrollera innehållet i bubblan */
+
+  &:hover {
+    img {
+      transform: scale(1.2); /* Zooma in bilden på hover */
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    display: block; /* Gör länken klickbar över hela bubblan */
+    width: 100%;
+    height: 100%;
+    position: relative; /* Behåll texten i sin plats */
+    display: flex; /* Gör att vi kan använda flexbox för innehållet */
+    flex-direction: column; /* Placera innehållet vertikalt */
+    justify-content: flex-end; /* Placera texten längst ner */
+  }
+
+  img {
+    width: 100%; /* Håll bilden inom bubblans bredd */
+    height: 100%; /* Matcha höjden på bubblan */
+    object-fit: cover; /* Håll proportionerna */
+    transition: transform 0.3s ease; /* Gör zoom-effekten mjuk */
+    position: absolute; /* Gör att texten placeras ovanpå */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Placera bilden under texten */
+  }
+  h3 {
+    padding: 0.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Placera texten ovanpå bilden */
+    margin: 0;
+    width: 100%;
+    background-color: $lightest;
+    bottom: 0;
+  }
+}
+
+.service-bubble {
+  background-color: $light_grey;
+  max-width: 160px;
+  padding: 2em 1em 1em 1em;
+  margin: 1em 2em 1em 0;
+  h3 {
+    padding: 8px 0 3px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-bubble {
+    max-width: 300px;
+    padding: 2em;
+  }
+}

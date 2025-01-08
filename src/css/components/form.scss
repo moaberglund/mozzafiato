@@ -1,0 +1,36 @@
+form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    input {
+      margin: 1em 0;
+      padding: 0.8em;
+      border: 1px solid rgb(145, 164, 250);
+      border-radius: 5px;
+    }
+
+    select {
+        margin: 1em 0;
+        padding: 0.8em;
+        border: 1px solid rgb(145, 164, 250);
+        border-radius: 5px;
+        &:hover {
+          cursor: pointer;
+        }
+    }
+
+
+    button {
+        margin: 1em 0;
+        padding: 0.8em;
+        background: rgb(145, 164, 250);
+        border: none;
+        border-radius: 5px;
+        &:hover {
+          background: rgb(145, 164, 250, 0.8);
+          cursor: pointer;
+        }
+      }
+  }
+
+  
