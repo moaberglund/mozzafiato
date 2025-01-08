@@ -22,15 +22,21 @@
                     ?>
                     <picture>
                         <!-- dynamisk bild -->
-                        <?php the_post_thumbnail('img-m') ?>
+                        <?php the_post_thumbnail('img-ml') ?>
                     </picture>
                 <?php } ?>
             </div>
-            <div>
+            <div class="contact-info">
 
                 <?php the_content(); ?>
             </div>
 
+        </div>
+        <!-- statiskt innehåll atm -->
+        <div class="staff">
+            <img src="<?= get_template_directory_uri();?>/media/luisa.jpg" alt="Profile picture of Luisa">
+            <h3>Luisa</h3>
+            <p>Hi! I'm the person behind Mozzafiato.</p>
         </div>
         <?php
 
