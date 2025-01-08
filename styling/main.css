@@ -385,11 +385,19 @@ h2 {
 }
 
 .about-bubble h2 {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 .about-bubble p {
-  line-height: 1.6em;
+  line-height: 1.4em;
+}
+
+.border-img img {
+  padding: 4em 0;
+  width: 1200px;
+  max-width: 100%;
+  height: 30vh;
+  object-fit: cover;
 }
 
 #diningtable {

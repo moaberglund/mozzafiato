@@ -28,6 +28,11 @@
                     </div>
 
                 </div>
+                <div class="border-img">
+                    <img src="<?= get_template_directory_uri();?>/media/speedboat.jpg" alt="">
+
+
+                </div>
 
                 <?php
             }
