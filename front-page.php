@@ -2,12 +2,6 @@
 <!-- Sida för Startsida -->
 <main>
 
-    <?php if (have_posts()) {
-        while (have_posts()) {
-            the_post();
-        }
-    }
-    ?>
 
     <div id="home" class="wrapper">
 
@@ -17,13 +11,30 @@
                 <?php dynamic_sidebar('topWidget'); ?>
             </div>
         <?php endif; ?>
-        <div class="grid">
 
-            <!-- plugin form booking rooms? -->
-            <!-- logotyp -->
-            <?php the_content(); ?>
+        <?php if (have_posts()) {
+            while (have_posts()) {
+                the_post(); ?>
+                <div class="grid">
 
-        </div>
+                    <div>
+                        <!-- form -->
+                        <?php the_content(); ?>
+                    </div>
+                    <div>
+                        <?php
+
+                        if (has_post_thumbnail()) {
+                            ?>
+                            <!-- dynamisk bild -->
+                            <?php the_post_thumbnail('img-l');
+                        } ?>
+                    </div>
+                </div>
+                <?php
+            }
+        }
+        ?>
 
         <!-- section for rooms home page -->
 
@@ -107,7 +118,7 @@
 
 
         </div>
-        
+
 
         <!-- services (max:6) -->
 

@@ -29,13 +29,15 @@ add_image_size('img-icon', 40, 40);
 
 
 /* Aktivera widget area */
-add_action('widgets_init', 'm_widgets_init');
+add_action('widgets_init', 'mozz_widgets_init');
 
-function m_widgets_init()
+function mozz_widgets_init()
 {
     register_sidebar(array(
         'name' => 'Widget on Home Page',
-        'id' => 'topWidget'
+        'id' => 'topWidget',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
     ));
 }
 
