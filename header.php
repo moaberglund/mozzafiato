@@ -49,6 +49,6 @@
       </div>
     </div>
       <div id="hero-img">
-        <img src="<?= get_template_directory_uri();?>media/lakecomo01.jpg" alt="View over lake como" />
+        <img src="<?= get_template_directory_uri();?>/media/lakecomo01.jpg" alt="View over lake como" />
       </div>
     </header>
