@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<!-- Sida för resor -->
+<!-- page for event -->
 <main>
     <div id="events-overview" class="wrapper">
 
