@@ -1,46 +1,51 @@
 <?php get_header(); ?>
-<!-- page for event -->
 <main>
     <div id="events-overview" class="wrapper">
-
         <h1>Events</h1>
         <div class="flex-column">
-
-            <!-- existing events (max:5)-->
             <?php
-            query_posts('category_name=eventthemes&posts_per_page=5');
-            if (have_posts()) {
-                while (have_posts()) {
-                    the_post();
-                    ?>
+            // Hämta kategori-objektet för eventthemes
+            $eventthemes_cat = get_category_by_slug('eventthemes');
 
+            // Hämta ENDAST poster från eventthemes, exkludera underkategorier
+            $args = array(
+                'category__in' => array($eventthemes_cat->term_id),
+                'category__not_in' => get_term_children($eventthemes_cat->term_id, 'category'),
+                'posts_per_page' => -1
+            );
+
+            $query = new WP_Query($args);
+
+            if ($query->have_posts()):
+                while ($query->have_posts()):
+                    $query->the_post();
+                    // Hämta postens titel i lowercase och ta bort mellanslag för att matcha slug
+                    $post_name_slug = strtolower(str_replace(' ', '', get_the_title()));
+                    // Hämta kategorin som matchar post-titeln
+                    $matching_category = get_category_by_slug($post_name_slug);
+                    ?>
                     <div class="events-overview-bubble">
                         <div>
-                            <?php
-                            //finns bild?
-                            if (has_post_thumbnail()) {
-                                ?>
+                            <?php if (has_post_thumbnail()): ?>
                                 <picture>
-                                    <!-- dynamisk bild -->
-                                    <?php the_post_thumbnail('img-large') ?>
+                                    <?php the_post_thumbnail('img-large'); ?>
                                 </picture>
-                            <?php } ?>
+                            <?php endif; ?>
                         </div>
                         <div>
                             <h2><?php the_title(); ?></h2>
                             <p><?php the_excerpt(); ?></p>
-                            <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
+                            <?php if ($matching_category): ?>
+                                <a href="<?php echo get_category_link($matching_category->term_id); ?>" class="btn">Read more</a>
+                            <?php endif; ?>
                         </div>
-
                     </div>
-
-                    <?php
-                }
-            }
+                <?php
+                endwhile;
+                wp_reset_postdata();
+            endif;
             ?>
         </div>
     </div>
-
 </main>
-
 <?php get_footer(); ?>

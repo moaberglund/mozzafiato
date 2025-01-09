@@ -1,53 +1,53 @@
 <mxfile host="65bd71144e">
     <diagram id="EivELpNOVOT4BKikSvhI" name="Page-1">
-        <mxGraphModel dx="1626" dy="1139" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1893" dy="1266" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="Startsida&lt;br&gt;(front-page.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="-150" y="200" width="160" height="60" as="geometry"/>
+                <mxCell id="2" value="Startsida&lt;br&gt;(front-page.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-80" y="40" width="160" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="About&lt;br&gt;(category-about.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="200" width="160" height="60" as="geometry"/>
+                <mxCell id="3" value="About&lt;br&gt;(category-about.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-180" y="120" width="160" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="Events&lt;br&gt;(category-eventthemes.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="440" y="200" width="160" height="60" as="geometry"/>
+                <mxCell id="4" value="Events&lt;br&gt;(category-eventthemes.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="120" width="160" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="Rooms &amp;amp; Suites&lt;br&gt;(category-rooms.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="200" width="160" height="60" as="geometry"/>
+                <mxCell id="5" value="Rooms &amp;amp; Suites&lt;br&gt;(category-rooms.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-370" y="120" width="160" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="Contact&lt;br&gt;(page.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="640" y="200" width="160" height="60" as="geometry"/>
+                <mxCell id="6" value="Contact&lt;br&gt;(page.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="120" width="160" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="Single Room Page&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="280" width="160" height="60" as="geometry"/>
+                <mxCell id="7" value="Single Room Page&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-370" y="200" width="160" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Single Room Page&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="350" width="160" height="60" as="geometry"/>
+                <mxCell id="8" value="Single Room Page&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-370" y="280" width="160" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="Single Room Page&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="420" width="160" height="60" as="geometry"/>
+                <mxCell id="9" value="Single Room Page&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-370" y="360" width="160" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="Single Room Page&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="490" width="160" height="60" as="geometry"/>
+                <mxCell id="10" value="Single Room Page&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-370" y="440" width="160" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="Single Room Page&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="560" width="160" height="60" as="geometry"/>
+                <mxCell id="11" value="Single Room Page&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-370" y="520" width="160" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="Single Room Page&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="630" width="160" height="60" as="geometry"/>
+                <mxCell id="12" value="Single Room Page&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-370" y="600" width="160" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="Single Event&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="-150" y="280" width="160" height="60" as="geometry"/>
+                <mxCell id="13" value="Single News&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-560" y="200" width="160" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="Single Event&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="-150" y="350" width="160" height="60" as="geometry"/>
+                <mxCell id="14" value="Single News&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-560" y="280" width="160" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="Single Event&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="-150" y="420" width="160" height="60" as="geometry"/>
+                <mxCell id="15" value="Single News&lt;br&gt;(single.php)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-560" y="360" width="160" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="Themed Event&lt;br&gt;(single.php=&amp;gt;category?)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="440" y="280" width="160" height="60" as="geometry"/>
+                <mxCell id="16" value="Themed Event&lt;br&gt;(single.php=&amp;gt;category?)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="200" width="160" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
