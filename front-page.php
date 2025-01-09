@@ -7,7 +7,7 @@
 
         <!-- widget -->
         <?php if (is_active_sidebar('topWidget')): ?>
-            <div id="topWidget">
+            <div class="topWidget">
                 <?php dynamic_sidebar('topWidget'); ?>
             </div>
         <?php endif; ?>

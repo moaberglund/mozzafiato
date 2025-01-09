@@ -39,6 +39,14 @@ function mozz_widgets_init()
         'before_widget' => '<div>',
         'after_widget' => '</div>',
     ));
+
+    // location widgetområde
+    register_sidebar(array(
+        'name' => 'Widget on Location Page',
+        'id' => 'locationWidget',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+    ));
 }
 
 

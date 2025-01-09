@@ -34,6 +34,13 @@ get_header();
             </div>
         </div>
 
+         <!-- widget -->
+         <?php if (is_active_sidebar('locationWidget')): ?>
+            <div class="topWidget">
+                <?php dynamic_sidebar('locationWidget'); ?>
+            </div>
+        <?php endif; ?>
+
         <div id="getHere">
             <h2>How to get here</h2>
 
