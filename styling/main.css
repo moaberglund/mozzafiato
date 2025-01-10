@@ -57,6 +57,72 @@ form button:hover {
   background: #91a4facc;
 }
 
+/*FORM 7*/
+
+/* Grundläggande formulärstyling */
+.wpcf7-form {
+  flex-direction: column;
+  max-width: 400px;
+  display: flex;
+}
+
+/* Input-fält styling */
+.wpcf7-form-control {
+  border: 1px solid #91a4fa;
+  border-radius: 5px;
+  margin: 1em 0;
+  padding: .8em;
+}
+
+/* Specific styling för datum-input */
+.wpcf7-date {
+  border: 1px solid #91a4fa;
+  border-radius: 5px;
+  margin: 1em 0;
+  padding: .8em;
+  width: 100%;
+}
+
+/* Specific styling för number-input */
+.wpcf7-number {
+  border: 1px solid #91a4fa;
+  border-radius: 5px;
+  margin: 1em 0;
+  padding: .8em;
+  width: 100%;
+}
+
+/* Specific styling för select */
+.wpcf7-select {
+  border: 1px solid #91a4fa;
+  border-radius: 5px;
+  margin: 1em 0;
+  padding: .8em;
+  width: 100%;
+}
+
+.wpcf7-select:hover {
+  cursor: pointer;
+}
+
+/* Submit-knapp */
+.wpcf7-submit {
+  color: #000;
+  background: #91a4fa;
+  border: none;
+  border-radius: 5px;
+  margin: 1em 0;
+  padding: .8em;
+  font-size: 14px;
+  width: 100%;
+}
+
+.wpcf7-submit:hover {
+  cursor: pointer;
+  background: #91a4facc;
+}
+
+
 .parallax img {
   background-position: center;
   background-repeat: no-repeat;
@@ -446,6 +512,12 @@ h2 {
   max-width: 600px;
 }
 
+@media screen and (width <= 768px) {
+  .grid img {
+    height: auto;
+  }
+}
+
 .grid p {
   width: 95%;
 }
@@ -485,6 +557,13 @@ h2 {
   max-width: 100%;
   height: 30vh;
   object-fit: cover;
+}
+
+@media screen and (width <= 768px) {
+  .border-img img {
+    height: auto;
+  }
+  
 }
 
 #diningtable {
@@ -577,6 +656,9 @@ h2 {
 #home h2 {
   margin-top: 2.5em;
 }
+#home img {
+  height: auto;
+}
 
 #form-img img {
   object-fit: cover;
@@ -604,8 +686,15 @@ h2 {
 
 #room-section img {
   object-fit: cover;
-  width: 85%;
+  width: 90%;
   max-height: 300px;
+  height: auto;
+}
+
+@media screen and (width <= 768px) {
+  #room-section img {
+    width: 100%;
+  }
 }
 
 #room-section button {
@@ -766,6 +855,14 @@ h2 {
   height: 300px;
 }
 
+@media screen and (width <= 768px) {
+  .rs-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+}
+
 .rs-text {
   width: 90%;
 }
@@ -851,6 +948,10 @@ h2 {
   .room-flex {
     grid-template-columns: 1fr;
     gap: 2em;
+  }
+
+  .room-flex .room-right img {
+    height: auto;
   }
 }
 /*# sourceMappingURL=index.8c1c22dc.css.map */
