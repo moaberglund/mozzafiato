@@ -99,6 +99,94 @@ form button:hover {
 #logotype img {
   width: 50px;
 }
+/* Föräldraelement måste ha relativ positionering */
+#desktop-nav li {
+  position: relative;
+}
+
+/* Placera underlänkar under föräldern */
+#desktop-nav .sub-menu {
+  display: none;
+  position: absolute; /* Absolut positionering inom föräldern */
+  top: 100%; /* Flytta underlänken precis under föräldern */
+  left: 0; /* Justera så den är i linje med vänsterkanten av föräldern */
+  background-color: #f6f5f3;
+  list-style: none;
+  padding: 1em;
+  margin: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  line-height: 2.4em;
+}
+
+/* Visa underlänkar vid hover */
+#desktop-nav li:hover > .sub-menu {
+  display: block;
+}
+
+/* Styling för underlänkar */
+#desktop-nav .sub-menu li {
+  padding: 1em;
+}
+
+#desktop-nav .sub-menu li a {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  padding: 1em;
+}
+
+#desktop-nav .sub-menu li a:hover {
+  color: #78786d;
+  background-color: white;
+}
+
+/* Liten skärm */
+/* Grundläggande styling för underlänkar */
+#burger-nav .menu-item-has-children {
+  position: relative; /* För att positionera underlänkar relativt till föräldern */
+}
+
+/* Dölj underlänkar som standard */
+#burger-nav .sub-menu {
+  position: absolute; /* Placera relativt till föräldern */
+  top: 100%; /* Starta precis under föräldern */
+  left: 0; /* Håll menyn vänsterjusterad */
+  display: block;
+  max-height: 0; /* Dölj underlänkar */
+  overflow: hidden;
+  background-color: #f6f5f3;
+  transition: max-height 0.3s ease-in-out;
+  z-index: 1;
+  width: 100%; /* Justera bredden till samma som föräldern */
+}
+
+/* Visa underlänkar när klassen "visible" är tillagd */
+#burger-nav .sub-menu.visible {
+  max-height: 500px; /* Ställ in ett maxvärde som rymmer innehållet */
+  position: static;
+}
+/* Stylingen för huvudmenyn och dess struktur */
+#burger-nav .menu > li {
+  margin-bottom: 1em; /* Ge avstånd mellan huvudmenyposterna */
+}
+
+/* Styling för underlänkar */
+#burger-nav .sub-menu li {
+  padding: 0.5em 1em;
+}
+
+#burger-nav .sub-menu li a {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+#burger-nav .sub-menu li a:hover {
+  color: #78786d;
+}
+
 
 #drop-nav nav {
   visibility: hidden;
