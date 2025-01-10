@@ -37,7 +37,6 @@
         ?>
 
         <!-- section for rooms home page -->
-
         <div id="room-section">
             <h2>Our Rooms & Suites</h2>
             <div class="grid">
@@ -46,38 +45,34 @@
                 if (have_posts()) {
                     while (have_posts()) {
                         the_post(); ?>
-
-
                         <div class="homeRoom">
                             <?php
-                            //finns bild?
-                            if (has_post_thumbnail()) {
-                                ?>
-                                <!-- dynamisk bild -->
+                            // Finns bild?
+                            if (has_post_thumbnail()) { ?>
+                                <!-- Dynamisk bild -->
                                 <?php the_post_thumbnail('img-l') ?>
                                 <h3><?php the_title(); ?></h3><br>
                                 <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
-
                             <?php } ?>
-
-
                         </div>
-
-
-
-
-                        <?php
-                    }
+                    <?php }
                 }
+                wp_reset_query(); // Återställer den globala frågan
                 ?>
             </div>
 
             <div class="center">
-                <!-- RÄTT LÄNK HÄR -->
-                <button>View all rooms</button>
+                <!-- Länk till alla rum -->
+                <?php
+                $category_id = get_cat_ID('rooms'); // Hämtar kategori-ID för "rooms"
+                $category_link = get_category_link($category_id); // Genererar länken för kategorin
+                ?>
+                <a href="<?php echo esc_url($category_link); ?>" class="btn">
+                    View all rooms
+                </a>
             </div>
-
         </div>
+
 
 
 
