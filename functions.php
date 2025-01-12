@@ -38,6 +38,8 @@ function mozz_widgets_init()
         'id' => 'topWidget',
         'before_widget' => '<div>',
         'after_widget' => '</div>',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>'
     ));
 
     // location widgetområde
@@ -46,6 +48,8 @@ function mozz_widgets_init()
         'id' => 'locationWidget',
         'before_widget' => '<div>',
         'after_widget' => '</div>',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>'
     ));
 }
 
