@@ -98,7 +98,7 @@
                                 if (has_post_thumbnail()) {
                                     ?>
                                     <!-- dynamisk bild -->
-                                    <?php the_post_thumbnail('img-square') ?>
+                                    <?php the_post_thumbnail('img-square'); ?>
                                     <h3><?php the_title(); ?></h3>
                                 </a>
 
@@ -133,7 +133,7 @@
                             if (has_post_thumbnail()) {
                                 ?>
                                 <!-- dynamisk bild -->
-                                <?php the_post_thumbnail('img-icon') ?>
+                                <?php the_post_thumbnail('img-icon'); ?>
                                 <h3><?php the_title(); ?></h3>
                                 <p><?php the_content(); ?></p>
 
