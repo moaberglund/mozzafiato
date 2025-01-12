@@ -1,5 +1,9 @@
 <?php
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 //Lägg till menyer
 
 add_action('init', 'register_my_menus');
@@ -29,9 +33,9 @@ add_image_size('img-icon', 40, 40);
 
 
 /* Aktivera widget area */
-add_action('widgets_init', 'mozz_widgets_init');
+add_action('widgets_init', 'mozzafiato_widgets_init');
 
-function mozz_widgets_init()
+function mozzafiato_widgets_init()
 {
     register_sidebar(array(
         'name' => 'Widget on Home Page',
