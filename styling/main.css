@@ -367,7 +367,7 @@ nav a:hover {
   height: 400px;
 }
 
-@media screen and (width >= 800px) {
+@media screen and (width >= 825px) {
   #desktop-nav {
     visibility: visible;
     float: right;
@@ -385,7 +385,7 @@ nav a:hover {
   }
 }
 
-@media screen and (width <= 800px) {
+@media screen and (width <= 825px) {
   #header-banner {
     padding: 0;
   }
