@@ -4,7 +4,7 @@ button {
   border: none;
   border-radius: 5px;
   margin: 1em 0;
-  padding: .8em;
+  padding: 0.8em;
 }
 
 button:hover {
@@ -17,7 +17,7 @@ button:hover {
   background: #91a4fa;
   border: none;
   border-radius: 5px;
-  padding: .8em;
+  padding: 0.8em;
   font-size: 14px;
   text-decoration: none;
 }
@@ -33,11 +33,12 @@ form {
   display: flex;
 }
 
-form input, form select {
+form input,
+form select {
   border: 1px solid #91a4fa;
   border-radius: 5px;
   margin: 1em 0;
-  padding: .8em;
+  padding: 0.8em;
 }
 
 form select:hover {
@@ -49,7 +50,7 @@ form button {
   border: none;
   border-radius: 5px;
   margin: 1em 0;
-  padding: .8em;
+  padding: 0.8em;
 }
 
 form button:hover {
@@ -71,7 +72,7 @@ form button:hover {
   border: 1px solid #91a4fa;
   border-radius: 5px;
   margin: 1em 0;
-  padding: .8em;
+  padding: 0.8em;
 }
 
 /* Specific styling för datum-input */
@@ -79,7 +80,7 @@ form button:hover {
   border: 1px solid #91a4fa;
   border-radius: 5px;
   margin: 1em 0;
-  padding: .8em;
+  padding: 0.8em;
   width: 100%;
 }
 
@@ -88,7 +89,7 @@ form button:hover {
   border: 1px solid #91a4fa;
   border-radius: 5px;
   margin: 1em 0;
-  padding: .8em;
+  padding: 0.8em;
   width: 100%;
 }
 
@@ -97,10 +98,17 @@ form button:hover {
   border: 1px solid #91a4fa;
   border-radius: 5px;
   margin: 1em 0;
-  padding: .8em;
+  padding: 0.8em;
   width: 100%;
 }
-
+/* Specific styling för email */
+.wpcf7-email {
+  border: 1px solid #91a4fa;
+  border-radius: 5px;
+  margin: 1em 0;
+  padding: 0.8em;
+  width: 100%;
+}
 .wpcf7-select:hover {
   cursor: pointer;
 }
@@ -112,7 +120,7 @@ form button:hover {
   border: none;
   border-radius: 5px;
   margin: 1em 0;
-  padding: .8em;
+  padding: 0.8em;
   font-size: 14px;
   width: 100%;
 }
@@ -121,7 +129,6 @@ form button:hover {
   cursor: pointer;
   background: #91a4facc;
 }
-
 
 .parallax img {
   background-position: center;
@@ -146,7 +153,7 @@ form button:hover {
   color: #f6f5f3;
   max-width: 1200px;
   margin: 0 auto;
-  padding: .5em 2em;
+  padding: 0.5em 2em;
   font-size: 1em;
 }
 
@@ -228,7 +235,7 @@ form button:hover {
 
 /* Visa underlänkar när klassen "visible" är tillagd */
 #burger-nav .sub-menu.visible {
-  max-height: 500px; 
+  max-height: 500px;
   position: static;
 }
 /* Stylingen för huvudmenyn och dess struktur */
@@ -252,7 +259,6 @@ form button:hover {
   color: #78786d;
 }
 
-
 #drop-nav nav {
   visibility: hidden;
   opacity: 0;
@@ -260,7 +266,7 @@ form button:hover {
   width: 100%;
   max-width: 400px;
   height: 100vh;
-  transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   position: fixed;
   top: 0;
   right: 0;
@@ -286,14 +292,14 @@ form button:hover {
 
 #drop-nav nav li {
   width: 100%;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   display: block;
 }
 
 #drop-nav nav a {
   color: #000;
   letter-spacing: 2px;
-  padding: 0 0 0 .5em;
+  padding: 0 0 0 0.5em;
   font-size: 20px;
   font-weight: 400;
   line-height: 2em;
@@ -333,12 +339,12 @@ form button:hover {
 }
 
 nav {
-  padding: .5em;
+  padding: 0.5em;
 }
 
 nav ul {
   text-align: right;
-  padding-top: .5em;
+  padding-top: 0.5em;
   position: static;
 }
 
@@ -454,7 +460,7 @@ footer .bottom-footer {
   }
 
   footer .top-footer {
-    padding: 2em .2em;
+    padding: 2em 0.2em;
   }
 
   footer .top-footer img {
@@ -467,7 +473,7 @@ footer .bottom-footer {
   }
 
   footer .bottom-footer {
-    padding: .5em;
+    padding: 0.5em;
     font-size: 14px;
   }
 }
@@ -490,7 +496,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-bottom: 1em;
-  padding: .8em;
+  padding: 0.8em;
   font-size: 1.6em;
   font-weight: 400;
 }
@@ -563,7 +569,6 @@ h2 {
   .border-img img {
     height: auto;
   }
-  
 }
 
 #diningtable {
@@ -613,7 +618,7 @@ h2 {
 }
 
 .events-overview-bubble h3 {
-  padding-top: .5em;
+  padding-top: 0.5em;
   font-weight: 600;
 }
 
@@ -702,7 +707,7 @@ h2 {
   border: none;
   border-radius: 5px;
   margin: 1em 0;
-  padding: .8em;
+  padding: 0.8em;
 }
 
 #room-section button:hover {
@@ -753,7 +758,7 @@ h2 {
   z-index: 1;
   width: 100%;
   height: 100%;
-  transition: transform .3s;
+  transition: transform 0.3s;
   position: absolute;
   top: 0;
   left: 0;
@@ -766,7 +771,7 @@ h2 {
   background-color: #f6f5f3;
   width: 100%;
   margin: 0;
-  padding: .5em;
+  padding: 0.5em;
   font-weight: 600;
   position: relative;
   bottom: 0;
@@ -791,7 +796,7 @@ h2 {
 }
 
 .contact-info h3 {
-  margin: 1.5em 0 .3em;
+  margin: 1.5em 0 0.3em;
   font-weight: 500;
 }
 
@@ -806,7 +811,7 @@ h2 {
 }
 
 #getHere h3 {
-  margin: 1.5em 0 .3em;
+  margin: 1.5em 0 0.3em;
   font-weight: 500;
 }
 
@@ -833,7 +838,7 @@ h2 {
 
 .news h2 {
   text-transform: uppercase;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
   font-weight: 500;
 }
 
@@ -843,7 +848,7 @@ h2 {
 
 .room-bubble h2 {
   letter-spacing: 1px;
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
   font-size: 1.4em;
   font-weight: 400;
 }
@@ -860,7 +865,6 @@ h2 {
     width: 100%;
     height: auto;
   }
-  
 }
 
 .rs-text {
@@ -880,7 +884,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
-  padding: .8em;
+  padding: 0.8em;
   font-size: 1.6em;
   font-weight: 400;
 }
@@ -914,7 +918,7 @@ h2 {
   border: 1px solid #91a4fa;
   border-radius: 5px;
   margin: 1em 0;
-  padding: .8em;
+  padding: 0.8em;
 }
 
 .room-flex .room-left button {
@@ -922,7 +926,7 @@ h2 {
   border: none;
   border-radius: 5px;
   margin: 1em 0;
-  padding: .8em;
+  padding: 0.8em;
 }
 
 .room-flex .room-left button:hover {
