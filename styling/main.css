@@ -156,10 +156,23 @@ form button:hover {
 }
 
 .topWidget {
-  background-color: #78786d;
+  background-color: #5e5e59;
 }
 
 .topWidget p {
+  color: #f6f5f3;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5em 2em;
+  font-size: 1em;
+}
+
+.locationWidget {
+  background-color: #5e5e59;
+  margin-top: 2em;
+}
+
+.locationWidget p {
   color: #f6f5f3;
   max-width: 1200px;
   margin: 0 auto;

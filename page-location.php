@@ -36,7 +36,7 @@ get_header();
 
          <!-- widget -->
          <?php if (is_active_sidebar('location-widget')): ?>
-            <div class="topWidget">
+            <div class="locationWidget">
                 <?php dynamic_sidebar('location-widget'); ?>
             </div>
         <?php endif; ?>
