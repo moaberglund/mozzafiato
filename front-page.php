@@ -26,9 +26,11 @@
 
                         if (has_post_thumbnail()) {
                             ?>
-                            <!-- dynamisk bild -->
-                            <?php the_post_thumbnail('img-l');
-                        } ?>
+                            <div class="image-container">
+                                <!-- dynamisk bild -->
+                                <?php the_post_thumbnail('img-l'); ?>
+                            </div>
+                        <?php } ?>
                     </div>
                 </div>
                 <?php

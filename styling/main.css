@@ -140,6 +140,15 @@ form button:hover {
   margin: 4em 0;
 }
 
+/* centrera bild vertikalt på startsidan */
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Gör att container tar upp allt tillgängligt vertikalt utrymme */
+}
+
+
 @media only screen and (device-width <= 1366px) {
   .parallax {
     background-attachment: scroll;
