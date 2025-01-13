@@ -6,9 +6,9 @@
     <div id="home" class="wrapper">
 
         <!-- widget -->
-        <?php if (is_active_sidebar('topWidget')): ?>
+        <?php if (is_active_sidebar('home-widget')): ?>
             <div class="topWidget">
-                <?php dynamic_sidebar('topWidget'); ?>
+                <?php dynamic_sidebar('home-widget'); ?>
             </div>
         <?php endif; ?>
 

@@ -39,7 +39,7 @@ function mozzafiato_widgets_init()
 {
     register_sidebar(array(
         'name' => 'Widget on Home Page',
-        'id' => 'topWidget',
+        'id' => 'home-widget',
         'before_widget' => '<div>',
         'after_widget' => '</div>',
         'before_title' => '<h2>',
@@ -49,7 +49,7 @@ function mozzafiato_widgets_init()
     // location widgetområde
     register_sidebar(array(
         'name' => 'Widget on Location Page',
-        'id' => 'locationWidget',
+        'id' => 'location-widget',
         'before_widget' => '<div>',
         'after_widget' => '</div>',
         'before_title' => '<h2>',
