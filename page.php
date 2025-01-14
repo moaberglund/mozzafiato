@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-<!-- utvecklad för övre delen av contact atm -->
+<!-- enkel grid layout med fetare h3:a -->
 <main>
-    <div id="contact" class="wrapper">
+    <div class="wrapper">
         <?php if (have_posts()) {
             while (have_posts()) {
                 the_post();
@@ -22,16 +22,9 @@
                 <?php } ?>
             </div>
             <div class="contact-info">
-
                 <?php the_content(); ?>
             </div>
-        </div>
-        <!-- statiskt innehåll atm -->
-        <div class="staff">
-            <img src="<?= get_template_directory_uri(); ?>/media/luisa.jpg" alt="Profile picture of Luisa">
-            <h3>Luisa</h3>
-            <p>Hi! I'm the person behind Mozzafiato.</p>
-        </div>
+        </div>        
         <?php
         ?>
     </div>
