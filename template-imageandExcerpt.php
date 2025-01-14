@@ -1,29 +1,24 @@
 <?php
 /*
-Template Name: Grid: Image and Excerpt
+Template Name: Grid: Image and Excerpt for News
 */
 ?>
-
 <?php get_header(); ?>
 <!-- Dynamisk kategori-sida -->
 <main>
     <div id="roomsAndSuites" class="wrapper">
-
         <?php
         // Hämta kategorinamn från query string, med fallback till "rooms"
-        $category_name = get_query_var('category_name', 'rooms');
+        $category_name = get_query_var('news', 'news');
         ?>
         <h1><?php echo ucfirst($category_name); ?></h1>
-
         <!-- Inlägg från vald kategori (max:20) -->
         <?php
         $query_args = array(
-            'category_name'  => $category_name,
+            'category_name' => $category_name,
             'posts_per_page' => 20,
         );
-
         $query = new WP_Query($query_args);
-
         if ($query->have_posts()) {
             while ($query->have_posts()) {
                 $query->the_post();
@@ -38,8 +33,8 @@ Template Name: Grid: Image and Excerpt
                             if (has_post_thumbnail()) {
                                 ?>
                                 <picture>
-                                <!-- Dynamisk bild -->
-                                <?php the_post_thumbnail('img-large'); ?>
+                                    <!-- Dynamisk bild -->
+                                    <?php the_post_thumbnail('img-square'); ?>
                                 </picture>
                             <?php } ?>
                         </div>
@@ -49,7 +44,6 @@ Template Name: Grid: Image and Excerpt
                         </div>
                     </div>
                 </div>
-
                 <?php
             }
         } else {
@@ -61,5 +55,4 @@ Template Name: Grid: Image and Excerpt
         ?>
     </div>
 </main>
-
 <?php get_footer(); ?>
