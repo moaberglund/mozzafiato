@@ -3,9 +3,7 @@
 Template Name: Grid and Divider
 */
 ?>
-
 <?php get_header(); ?>
-
 <main>
     <div id="about" class="wrapper">
         <?php
@@ -20,9 +18,7 @@ Template Name: Grid and Divider
             'category_name' => $category_name,
             'posts_per_page' => 5,
         );
-
         $query = new WP_Query($query_args);
-
         if ($query->have_posts()) {
             while ($query->have_posts()) {
                 $query->the_post();
@@ -56,5 +52,4 @@ Template Name: Grid and Divider
         ?>
     </div>
 </main>
-
 <?php get_footer(); ?>
