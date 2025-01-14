@@ -6,16 +6,13 @@
             <?php
             // Hämta kategori-objektet för eventthemes
             $eventthemes_cat = get_category_by_slug('eventthemes');
-
             // Hämta ENDAST poster från eventthemes, exkludera underkategorier
             $args = array(
                 'category__in' => array($eventthemes_cat->term_id),
                 'category__not_in' => get_term_children($eventthemes_cat->term_id, 'category'),
-                'posts_per_page' => -1
+                'posts_per_page' => 10
             );
-
             $query = new WP_Query($args);
-
             if ($query->have_posts()):
                 while ($query->have_posts()):
                     $query->the_post();
@@ -40,7 +37,7 @@
                             <?php endif; ?>
                         </div>
                     </div>
-                <?php
+                    <?php
                 endwhile;
                 wp_reset_postdata();
             endif;
