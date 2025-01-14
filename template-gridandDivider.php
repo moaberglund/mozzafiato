@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Grid and Divider
+Template Name: Grid and Divider for Wine Tasting
 */
 ?>
 <?php get_header(); ?>
@@ -8,7 +8,7 @@ Template Name: Grid and Divider
     <div id="about" class="wrapper">
         <?php
         // Hämta kategorinamn från query string, med fallback till en standardkategori
-        $category_name = get_query_var('category_name', 'about');
+        $category_name = get_query_var('winetasting', 'winetasting');
         ?>
         <h1><?php echo ucfirst($category_name); ?></h1>
 
@@ -24,7 +24,7 @@ Template Name: Grid and Divider
                 $query->the_post();
                 ?>
                 <div class="grid">
-                    <div class="about-bubble">
+                    <div class="rs-img">
                         <?php
                         // Kontrollera om inlägget har en bild
                         if (has_post_thumbnail()) {
