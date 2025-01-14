@@ -1,10 +1,7 @@
 <?php get_header(); ?>
 <!-- Sida för Startsida -->
 <main>
-
-
     <div id="home" class="wrapper">
-
         <!-- widget -->
         <?php if (is_active_sidebar('home-widget')): ?>
             <div class="topWidget">
@@ -16,21 +13,20 @@
             while (have_posts()) {
                 the_post(); ?>
                 <div class="grid">
-
                     <div>
                         <!-- form -->
                         <?php the_content(); ?>
                     </div>
                     <div>
                         <?php
-
                         if (has_post_thumbnail()) {
                             ?>
                             <div class="image-container">
                                 <!-- dynamisk bild -->
                                 <?php the_post_thumbnail('img-l'); ?>
                             </div>
-                        <?php } ?>
+                            <?php
+                        } ?>
                     </div>
                 </div>
                 <?php
@@ -75,13 +71,6 @@
             </div>
         </div>
 
-
-
-
-        <div id="parallaxHome" class="parallax">
-
-        </div>
-
         <!-- section for news articles -->
         <div>
             <h2>News</h2>
@@ -91,8 +80,6 @@
                 if (have_posts()) {
                     while (have_posts()) {
                         the_post(); ?>
-
-
                         <div class="news-bubble">
                             <a href="<?php the_permalink(); ?>">
                                 <?php
@@ -103,22 +90,16 @@
                                     <?php the_post_thumbnail('img-square'); ?>
                                     <h3><?php the_title(); ?></h3>
                                 </a>
-
                             <?php } ?>
-
                         </div>
                         <?php
                     }
                 }
                 ?>
             </div>
-
-
         </div>
 
-
         <!-- services (max:6) -->
-
         <div id="services">
             <h2>Our Services</h2>
             <div class="flex">
@@ -127,9 +108,7 @@
                 if (have_posts()) {
                     while (have_posts()) {
                         the_post(); ?>
-
                         <div class="service-bubble">
-
                             <?php
                             //finns bild?
                             if (has_post_thumbnail()) {
@@ -138,24 +117,15 @@
                                 <?php the_post_thumbnail('img-icon'); ?>
                                 <h3><?php the_title(); ?></h3>
                                 <p><?php the_content(); ?></p>
-
                             <?php } ?>
-
                         </div>
-
-
                         <?php
                     }
                 }
                 ?>
             </div>
-
-
         </div>
 
     </div>
-
-
 </main>
-
 <?php get_footer(); ?>
