@@ -1,10 +1,8 @@
 <?php get_header(); ?>
-<!-- Sida för resor -->
+<!-- Sida för alla rum -->
 <main>
     <div id="roomsAndSuites" class="wrapper">
-
         <h1>Rooms & Suites</h1>
-
         <!-- existing rooms (max:20)-->
         <?php
         query_posts('category_name=rooms&posts_per_page=20');
@@ -12,7 +10,6 @@
             while (have_posts()) {
                 the_post();
                 ?>
-
                 <div class="room-bubble">
                     <h2><?php the_title(); ?></h2>
                     <div class="grid">
@@ -22,8 +19,8 @@
                             if (has_post_thumbnail()) {
                                 ?>
                                 <picture>
-                                <!-- dynamisk bild -->
-                                <?php the_post_thumbnail('img-large') ?>
+                                    <!-- dynamisk bild -->
+                                    <?php the_post_thumbnail('img-large') ?>
                                 </picture>
                             <?php } ?>
                         </div>
@@ -31,18 +28,12 @@
                             <p><?php the_excerpt(); ?></p><br>
                             <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
                         </div>
-
                     </div>
-
                 </div>
-
                 <?php
             }
         }
         ?>
-
     </div>
-
 </main>
-
 <?php get_footer(); ?>
